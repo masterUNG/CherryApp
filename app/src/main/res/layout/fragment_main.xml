@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="#82ffffff"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Logo-->
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo" />
+
+        <!--User-->
+        <LinearLayout
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--TextField-->
+            <EditText
+                android:hint="User :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--Password-->
+        <LinearLayout
+            android:layout_marginRight="@dimen/my_margin"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--TextField-->
+            <EditText
+                android:hint="Password :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <!--Login Button-->
+        <Button
+            android:text="Login"
+            android:layout_marginRight="@dimen/my_margin"
+            android:layout_marginLeft="@dimen/my_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--Register-->
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic"
+            android:textSize="@dimen/h2"
+            android:layout_gravity="center_horizontal"
+            android:text="New Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
