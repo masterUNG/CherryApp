@@ -37,6 +37,8 @@
 
             <!--TextField-->
             <EditText
+                android:inputType="text"
+                android:id="@+id/editTextUser"
                 android:hint="User :"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -61,6 +63,8 @@
 
             <!--TextField-->
             <EditText
+                android:inputType="textPassword"
+                android:id="@+id/editTextPassword"
                 android:hint="Password :"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -70,6 +74,7 @@
 
         <!--Login Button-->
         <Button
+            android:id="@+id/buttonLogin"
             android:text="Login"
             android:layout_marginRight="@dimen/my_margin"
             android:layout_marginLeft="@dimen/my_margin"
@@ -78,6 +83,8 @@
 
         <!--Register-->
         <TextView
+            android:clickable="true"
+            android:id="@+id/textViewRegister"
             android:textColor="@color/colorAccent"
             android:layout_marginTop="16dp"
             android:textStyle="italic"

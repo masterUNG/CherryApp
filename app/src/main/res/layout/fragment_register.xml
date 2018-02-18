@@ -28,7 +28,7 @@
             <!--Icon-->
             <ImageView
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_action_user"
+                android:src="@drawable/ic_action_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -72,13 +72,13 @@
             <!--Icon-->
             <ImageView
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_action_user"
+                android:src="@drawable/ic_action_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <!--TextField-->
             <EditText
-                android:hint="User :"
+                android:hint="Password :"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -87,6 +87,7 @@
 
         <!--Register Button-->
         <Button
+            android:text="Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
