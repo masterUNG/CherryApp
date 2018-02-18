@@ -64,6 +64,7 @@ public class ServiceFragment extends Fragment{
 
             for (int i=0; i<jsonArray.length(); i+=1) {
 
+
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 nameStrings[i] = jsonObject.getString("Name");
                 userStrings[i] = jsonObject.getString("User");
