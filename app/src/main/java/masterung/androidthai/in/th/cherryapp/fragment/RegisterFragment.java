@@ -9,10 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import masterung.androidthai.in.th.cherryapp.MainActivity;
 import masterung.androidthai.in.th.cherryapp.R;
 import masterung.androidthai.in.th.cherryapp.utility.MyAlert;
+import masterung.androidthai.in.th.cherryapp.utility.MyConstance;
+import masterung.androidthai.in.th.cherryapp.utility.PostDataToServer;
 
 /**
  * Created by masterung on 18/2/2018 AD.
@@ -66,8 +69,30 @@ public class RegisterFragment extends Fragment{
 
                 } else {
 //                    No Space
+                    try {
 
-                }
+                        MyConstance myConstance = new MyConstance();
+                        PostDataToServer postDataToServer = new PostDataToServer(getActivity());
+                        postDataToServer.execute(
+                                nameString,
+                                userString,
+                                passwordString,
+                                myConstance.getUrlPostData());
+
+                        if (Boolean.parseBoolean(postDataToServer.get())) {
+                            getActivity().getSupportFragmentManager().popBackStack();
+                        } else {
+                            Toast.makeText(getActivity(), "Cannot Upload value",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+
+
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }   // if
 
 
 
